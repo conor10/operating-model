@@ -1,0 +1,17 @@
+.DS_Store
+node_modules/
+.env
+.env.*
+!.env.example
+dist/
+build/
+coverage/
+*.log
+
+# Agent/runtime local state
+.codex/
+.claude/
+.pi/
+
+# Temporary office lock files
+~$*

@@ -1,0 +1,15 @@
+date: YYYY-MM-DD
+task: "Short task name"
+status: proposed # proposed | dispatched | complete (judged Ship; frozen by operator commit) | blocked
+planner_model: ""
+implementer_model: ""
+judge_model: ""
+operator: ""
+related_decisions: []
+commits: []
+artifacts:
+  - planner-output.md
+  - implementer-prompt.md
+  - implementer-summary.md
+  - judge-output.md
+  - final-summary.md
