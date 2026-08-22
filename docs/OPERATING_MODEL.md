@@ -91,6 +91,28 @@ For each substantial unit of work ("boundary"):
 6. **Anything the judge or run surfaced** that is a domain question goes
    to `SME-REVIEW.md`; process lessons go into `AGENTS.md` working rules.
 
+## Team Scale: the Lifecycle as a Pull Request
+
+Solo, the lifecycle above runs locally: an uncommitted working tree, a
+saved diff, one freeze commit. With more than one committer, the same
+lifecycle compiles to a pull request:
+
+1. The implementer works on a branch and opens a PR. That PR, pinned at
+   its head SHA, is the frozen boundary.
+2. The judge reviews the PR diff at that SHA; findings land as review
+   comments or in the run record.
+3. The human merge is the freeze. Branch protection with required review
+   machine-enforces what the contract states: the human is final merge
+   authority, and nothing lands unreviewed.
+
+A PR branch is mutable — new commits or force pushes move it. "Frozen"
+therefore means a specific head SHA, never the branch name. If commits
+land after review, the boundary re-freezes and the judge re-checks.
+
+Direct pushes to the main branch are off-limits for agents in every mode
+(see `TASKS.md`); at team scale make them off-limits for humans too,
+enforced by branch protection.
+
 ## Handoff Boundaries
 
 Use one of:
@@ -101,7 +123,9 @@ Use one of:
 - git worktree
 - saved diff under `agent-runs/.../final.diff`
 
-Avoid reviewing a moving working tree.
+Avoid reviewing a moving target: a working tree that is still changing,
+or a pull request branch that can gain commits — review a pinned head
+SHA.
 
 ## Agent Run Records
 

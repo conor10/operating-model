@@ -143,7 +143,8 @@ When asked for review:
 
 - One workspace owns edits.
 - Planner and judge/reviewer roles are read-only by default.
-- Use commits, branches, worktrees, or saved diffs as handoff boundaries.
+- Use commits, branches, pull requests, worktrees, or saved diffs as handoff
+  boundaries.
 - Do not let multiple agents edit the same files without an explicit integrator.
 - Implementers may deviate from a dispatch prompt only by declaring the
   deviation and its reason in their summary; the judge adjudicates it

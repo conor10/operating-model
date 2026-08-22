@@ -37,6 +37,28 @@ Record non-trivial decisions here. Keep entries concise and useful for future hu
   contract; the template stays small by folding lessons into existing
   files rather than adding process documents.
 
+## DEC-003: Pull requests are the team-scale freeze boundary
+
+- **Date:** 2026-08-22
+- **Status:** Accepted
+- **Decision:** Name pull requests explicitly in the operating model: with
+  more than one committer, a PR pinned at its head SHA is the frozen
+  boundary, the judge reviews that SHA, and the human merge — enforced by
+  branch protection with required review — is the freeze. The local flow
+  (uncommitted tree, saved diff, freeze commit) remains the solo default.
+- **Rationale:** The contract said the human is final merge authority, but
+  the lifecycle only showed a local freeze commit, implying direct pushes
+  to main — the very thing `TASKS.md` forbids for agents and branch
+  protection forbids for teams. The PR is where the operating model stops
+  being documentation and becomes machine-enforced.
+- **Alternatives considered:** Leaving PRs as one unremarked option among
+  the handoff boundaries (team readers would have to derive the mapping
+  themselves); mandating PRs in all modes (adds ceremony the solo flow
+  does not need).
+- **Consequences:** `AGENTS.md` lists pull requests as a handoff boundary;
+  `docs/OPERATING_MODEL.md` maps the lifecycle onto a PR and requires
+  review at a pinned head SHA, never a moving branch.
+
 ## Template
 
 ## DEC-XXX: Title
