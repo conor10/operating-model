@@ -208,4 +208,4 @@ Start small. Add ceremony only when needed:
 
 ## About
 
-Maintained by Conor Svensson. I work with a small number of teams putting agentic engineering to work in regulated industries. [More here](https://conorsvensson.com/advisory/)
+Maintained by Conor Svensson. I work with a small number of teams putting agentic engineering to work in regulated industries. Learn more [here](https://conorsvensson.com/advisory/).
