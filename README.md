@@ -1,6 +1,6 @@
 # Agent Operating Model
 
-A lightweight template for starting repos that are easy for humans and coding agents to understand.
+A reference operating model for agentic engineering — workflow, decision capture, and stakeholder collaboration for teams building with agents. Read more [here](https://conorsvensson.com/writing/why-you-need-an-operating-model-for-agentic-engineering/).
 
 The default operating model is:
 
@@ -205,3 +205,7 @@ Start small. Add ceremony only when needed:
 - ACPx: https://github.com/openclaw/acpx
 - codex-first skill: https://github.com/steipete/agent-scripts/blob/main/skills/codex-first/SKILL.md
 - agent-skills: https://github.com/addyosmani/agent-skills
+
+## About
+
+Maintained by Conor Svensson. I work with a small number of teams putting agentic engineering to work in regulated industries. [More here](https://conorsvensson.com/advisory/)
